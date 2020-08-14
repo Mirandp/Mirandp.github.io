@@ -1,6 +1,10 @@
 body{
-	margin: 25px;
-	padding: 10px;
+	margin-top: 0px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 0px;
+
+
 }
 
 h1{
@@ -8,6 +12,7 @@ h1{
   color: #FFFFFF;
   font-variant: all-small-caps;
   font-size: 30px; /* Ultimate Frisbee */
+  margin-bottom: 30px;
 }
 
 header{
@@ -22,57 +27,93 @@ header{
 
 
 nav a{
-	display: inline-block;
+	display: inline;
 	background-color: #FFFFFF;
 	padding: 15px 55px;
-	margin: 5px 80px;
 	border-radius: 3px;
 	border: solid 2px #000000;
 	text-decoration: none;
 	color: #000000;
+	margin: 5%;
 }
 
 .active{  /* Hover Button */
  color: #FFFFFF;
- background-color: #000000;
+ background-image: linear-gradient(to right, rgba(255,20,147), rgba(255,0,0,1));
  border: solid 2px #FFFFFF;
-}
-
-
-
-img{ /* Images */
-	width: 150px;
-	border: solid 2px #FFFFFF;
-	margin: 0 auto;
-	margin-top: 20px;
 }
 
 .left{ /* Left Display Box */
 	background: #000000;
-	width: 12%;
-	display: inline-block;
+	width: 15%;
+	display: block;
 	position: relative;
-	padding: 10px 20px;
 	float: left;
 	height: 800px;
+
+	margin-right: 10px;
+}
+
+img{ /* Images */
+	width: 140px;
+	border: solid 2px #FFFFFF;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-left: 16px;
+	margin-right: 5px;
+
 }
 
 .right{
 	display: inline-block;
-	position: absolute;
-	width: 60%;
-	float: right;
-}
-
-h2{
 	color: #000000;
-	font-size: 25px;
-}
-
-section{
-	padding: 0px 10px;
+	font-size: 90%;
+	padding-left: 5px;
 }
 
 p{
-	font-size: 17.75px;
+	font-size: 105%;
 }
+
+table{
+	display: table;
+	margin: auto 0;
+	padding-left: 15%;
+	padding-right: 5%;
+	float: both;
+	width: 90%;
+	text-align: left;
+}
+
+th{
+	border: 1.5px solid #000000;
+	color: #FFFFFF;
+	font-family: sans-serif, helvetica;
+	padding: 5px;
+	background-color: #FF69B4;
+	background-image: linear-gradient(to right, rgba(255,20,147), rgba(255,0,0,1));
+	border-radius: 4px 4px 0px 0px;
+}
+
+tr{
+	opacity: .8;
+	line-height: 20px;
+}
+
+tr:hover{
+	opacity: .6;
+}
+
+td{
+	padding: 5px;
+	font-size: 12px;
+	font-family: sans-serif, helvetica;
+	color: white;
+	background-color: #000000;
+}
+
+td:nth-child(2), td:nth-child(3) {
+ text-align: center;
+}
+
+
