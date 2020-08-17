@@ -56,23 +56,24 @@ h4{
 p {
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
-	
 	text-align: justify;
-
-	
+	font-size: 12px;
 	
 }
 
 .p1{
-	margin-right: 50px;
+	margin-right: 70px;
 	box-sizing: border-box;
-	width: 55%;
+	width: 50%;
+	text-overflow: hidden;
 }
+
 img{
+	box-sizing: border-box;
 	float: right;
 	width: 500px;
-	height: 100%;
 	border: 5px solid black;
+	margin-left: 25px;
 }
 
 
@@ -126,6 +127,12 @@ img {
 	width: 100%;
 }
 
+.p1{
+	
+	width: 100%;
+	text-overflow: hidden;
+}
+
 }
 
 
@@ -134,14 +141,26 @@ img {
 /* Extra Small devices (tablets, 768px and up) */
 @media (max-width: 766px) {
 
+.p1{
+	margin-right: 70px;
+	box-sizing: border-box;
+	width: 100%;
+	text-overflow: hidden;
+}
 
 
 img {
 
-	margin-left: 0 auto;
-	margin-right: 0 auto;
-	display: inline-block;
+
+	margin: 0 auto;
+	margin-left: 10px;
+	display: block;
 	width: 100%;
+}
+
+nav, nav a{ 
+
+ 	margin: 5px;
 }
 
 
