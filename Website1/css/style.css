@@ -1,7 +1,8 @@
 h1{
 	text-align: left;
 	margin: 0 auto;
-	padding-top: 30px;
+
+
 	font-family: "Open Sans", sans-serif;
 
 }
@@ -11,9 +12,7 @@ body{
 }
 
 nav{
-
 	
-	text-align: left;
 	background-color: #000000;
 	margin: auto 0;
 	font-size: 130%;
@@ -28,11 +27,11 @@ nav a{
 }
 
 nav a:hover{
-	color: green;
+	color: #FFDBE9;
 }
 
 .navbar{
-	text-align: center;
+	text-align: right;
 }
 
 h2{ /* Spotlight On:*/
@@ -59,14 +58,15 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	
 	text-align: justify;
-	display
+
 	
 	
 }
 
 .p1{
 	margin-right: 50px;
-	word-wrap: break-word;
+	box-sizing: border-box;
+	width: 55%;
 }
 img{
 	float: right;
