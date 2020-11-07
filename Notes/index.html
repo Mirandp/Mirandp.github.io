@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="javascript" href="../js/javascript.js"></script>
+</head>
+
+<body>
+
+<p class = "fancy box"> Welcome! </p>
+<h1>Miranda Peters</h1>
+<header>
+ <!--Nav Links Vertical Bar -->
+<nav>
+	<a href="">Home</a>
+	<a href="">Photos</a>
+	<a href="">Recipes</a>
+	<a href="">Contact</a>
+</nav>
+
+</header>
+
+<section><h2>Favorite Foods</h2>
+   <ul>
+	<li>Pasta</li>
+	<li>Fruit</li>
+	<li>Vegetables</li>
+	<li>Cheesecake</li>
+  </ul></section>
+
+<section><div><h2>Achievements</h2>
+Progress in this course (100%) <progress value="100" max="100"> </progress>
+<br>
+Progress in the Specialization capstone (20%) <progress value="20" max="100"> </progress>
+<br>
+Progress in life goals (45%)  <progress value="45" max="100"> </progress>
+</div></section>
+
+<section><h2>More About Me</h2>
+<details>
+<Summary>My Childhood  (Click on Arrow)</summary>
+	I grew up in Cleveland, Ohio. I live near Lake Erie and like to visit the beach in the summer.
+</details>
+</section>
+<br>
+<section>
+	<h2>Form</h2>
+	<form>
+	zip code with pattern: <input type="text" name="zip_codeP" pattern="[0-9]{5}" required><br/>
+	zip code with numbers: <input type="number" name="zip_codeN" min="00000"  max="99999" required><br/>
+
+	<label>Preferred email address:
+		<input type="email" id="email_addr" name="email1" value="me@me.com" required >
+	</label>
+	<br>
+
+	<label>Repeat email address:
+		<input type="email" id="email_repeat" name="email2" required onchange="return check()">
+	</label>
+	<input type= 'submit' value= "Confirm Emails!" onclick="return check();">
+
+</form>
+
+
+</section>
+<footer>
+<p>
+	<img src="http://www.intro-webdesign.com/images/newlogo.png" alt="New Logo">
+	This page was created by Miranda Peters &amp; Colleen van Lent. To learn more about
+	web design, visit <a href="http://www.intro-webdesign.com/">Intro to Web Design</a>.
+</p></footer>
+
+</body>
+
+</html>

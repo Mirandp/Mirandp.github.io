@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+  
 </head>
 
 <body>
-
+  <script src="../js/javascript.js"></script>
 <p class = "fancy box"> Welcome! </p>
 <h1>Miranda Peters</h1>
 <header>
@@ -43,12 +44,110 @@ Progress in life goals (45%)  <progress value="45" max="100"> </progress>
 	I grew up in Cleveland, Ohio. I live near Lake Erie and like to visit the beach in the summer.
 </details>
 </section>
+<br>
+<section>
+	<h2>Form</h2>
+	<form>
+	zip code with pattern: <input type="text" name="zip_codeP" pattern="[0-9]{5}" required><br/>
+	zip code with numbers: <input type="number" name="zip_codeN" min="00000"  max="99999" required><br/>
+
+	<label>Preferred email address:
+		<input type="email" id="email_addr" name="email1" value="me@me.com" required >
+	</label>
+	<br>
+
+	<label>Repeat email address:
+		<input type="email" id="email_repeat" name="email2" required onchange="return check()">
+	</label>
+	<input type= 'submit' value= "Confirm Emails!" onclick="return check();">
+
+</form>
+<br>
+<form>
+	Favorite Foods <br/>
+	<label><input type="checkbox" name="food" value="pizza">Pizza</label> <br/>
+	<label><input type="checkbox" name="food" value="chips">Chips</label> <br/>
+	<label><input type="checkbox" name="food" value="Kale">Kale</label> <br/>
+
+	<input type="submit">
+</form>
+<br>
+
+<br>
+<form>
+	Gender <br/>
+	<label><input type="radio" name="gender" value="male">Male</label> <br/>
+	<label><input type="radio" name="gender" value="female">Female</label> <br/><br/>
+
+	Favorite Foods <br/>
+	<label><input type="radio" name="food" value="pizza">Pizza</label> <br/>
+	<label><input type="radio" name="food" value="chips" checked="true">Chips</label> <br/>
+	<label><input type="radio" name="food" value="Kale">Kale</label> <br/>
+	<input type="submit">
+</form>
+<br>
+
+	<form action="http://www.Mirandp.github.io/Notes/index.html" method = "GET">
+		<fieldset>
+			  <legend>Form Verification</legend>
+  <label for ="fName">First Name:</label>
+			  <input type = "text" name = "fName" id = "fName" required><br/>
+  			<label for = "lName">Last Name:</label>
+			  <input type = "text" name = "lName" id = "lName" required><br/>
+			  <label for = "yesNick">Nickname?:</label>
+			  <input id="yesNick" name="yesNick" type="checkbox" value="yes" onchange= "nicknameFunction()"/>	<br/>
+			    
+  <div id = "nick">
+				    <label for = "nickname">Nickname:</label>
+				    <input type = "text" name = "nickname" id = "nickname"><br/>
+			  </div>
+  <input type = "submit" value = "Verify"/>
+ </fieldset>
+		
+
+<h1>JavaScript Homework</h1>
+	<p>Add the JavaScript code needed to enable auto-complete on this form.  Whenever the checkbox is checked, the code should automatically copy the values from Shipping Name and Shipping Zip into the Billing Name and Billing Zip.  If the checkbox is unchecked, the Billing Name and Billing Zip should go blank.</p>
+
+<form>
+		<fieldset>
+			<legend>Shipping Information</legend>
+			<label for ="shippingName">Name:</label>
+			<input type = "text" name = "shipName" id = "shippingName" required><br/>
+			<label for = "shippingZip">Zip code:</label>
+			<input type = "text" name = "shipZip" id = "shippingZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+		<input type="checkbox" id="same" name="same" onchange= "billingFunction()"/>
+		<label for = "same">Is the Billing Information the Same?</label>
+				
+		<fieldset> 
+			<legend>Billing Information</legend>
+			<label for ="billingName">Name:</label>
+			<input type = "text" name = "billName" id = "billingName" required><br/>
+			<label for = "billingZip">Zip code:</label>
+			<input type = "text" name = "billZip" id = "billingZip" pattern = "[0-9]{5}" required><br/>
+		</fieldset>
+			<input type = "submit" value = "Verify"/>
+		</form>
+
+
+
+
+
+
+
+
+
+
+		
+
+</section>
 <footer>
 <p>
 	<img src="http://www.intro-webdesign.com/images/newlogo.png" alt="New Logo">
 	This page was created by Miranda Peters &amp; Colleen van Lent. To learn more about
 	web design, visit <a href="http://www.intro-webdesign.com/">Intro to Web Design</a>.
 </p></footer>
+
 </body>
 
 </html>
