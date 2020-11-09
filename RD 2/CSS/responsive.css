@@ -1,0 +1,169 @@
+@media screen and (max-width: 889px){
+
+img{
+	visibility: hidden;
+}
+
+}
+
+/** I added information Above Here **/
+body{
+	margin: 1%;
+	padding:1%;
+	background-color: rgba(0,0,255,.2);
+	font-size: 100%;
+	min-width: 500px;
+
+}
+
+header, footer{
+  background-color:#0066FF;
+  padding: 1%;
+  margin: 1%;
+}
+header h1{
+	font-size: 3rem;
+	color:rgba(0,0,0,.7);
+
+}
+
+section{
+  margin:1%;
+  padding:1%;
+}
+
+nav a{
+	display:block;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 35px;
+	text-decoration: none;
+	padding: 2%;
+	margin: 1%;
+}
+
+h1{
+	text-align: center;
+	color:rgba(255,0,0,.7);
+}
+
+
+.myClass{
+	margin: 0em 1em;
+	padding:.75em;
+	border: 1px solid black;
+	border-radius: .25%;
+
+	/* Safari and Chrome */	
+	-webkit-column-count:3;
+	-moz-column-count: 3;
+	column-count:3;
+	
+}
+
+ol{
+	list-style:upper-roman; 
+	margin:1em;
+}
+
+img{
+	display: none;
+}
+
+footer{
+	clear: both;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+/** I Added information Below Here **/
+
+
+@media screen and (min-width: 900px){
+
+h1:after{
+	content: "(I guess...)";
+}
+
+nav a{
+	color: rgba(0,0,0,.7);
+}
+
+img{
+		display: inline;
+		width: 15%; 
+		float: right;
+		position: relative;
+		margin: 5%;
+		margin-top: 15px;
+
+	}
+
+header{
+	background-color: rgba(0,0,255,.0);
+}
+
+#left{
+		float: left;
+		position: absolute;
+		margin-right: 30px;
+
+
+	}
+
+#center{
+
+	float: right;
+	display: inline-block;
+	width: 60%;
+	position: relative;
+	margin-bottom: -25px;
+}
+
+footer{
+	background-color: rgba(0,0,255,.0);
+	position: relative;
+	margin-right: -70px;
+	margin-top: 30px;
+	font-size: .75em;
+	
+	clear: right;
+}
+}
+
+/** I Added information Below Here Print **/
+
+@media print and (max-width: 700px){
+
+header h1{
+	font-size: 1em;
+	background-color: #000000;
+}
+
+nav a{
+	text-decoration: underline;
+	text-align: center;
+	border: none;
+	padding: 1px;
+}
+
+img{
+	visibility: hidden;
+}
+
+
+h3{
+	display: block;
+	margin: -10px;
+
+}
+
+p{
+	display: block;
+	float: left;
+
+}
+
+}
+
